@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF00"
+    tools:context=".SetB_Ques2">
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Friend Finder"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:textSize="45sp"
+        />
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="50dp"
+        android:inputType="text"
+        android:layout_below="@id/app_title"
+        android:hint="Enter your first name"
+        />
+    <EditText
+        android:id="@+id/second_name"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:inputType="text"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/first_name"
+        android:hint="Enter your last name"
+        />
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Interested in"
+        android:paddingTop="60dp"
+        android:layout_below="@id/second_name"
+        android:textColor="#FF0000"
+        android:textSize="35sp"
+        />
+    <RadioGroup
+        android:id="@+id/select_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view">
+
+        <RadioButton
+            android:id="@+id/first_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="25sp"
+            android:textColor="#FF0000"
+            />
+        <RadioButton
+            android:id="@+id/second_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="25sp"
+            android:textColor="#FF0000"
+            />
+        <RadioButton
+            android:id="@+id/third_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Both"
+            android:textSize="25sp"
+            android:textColor="#FF0000"
+            />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_gender"
+        android:layout_marginTop="20dp"
+        android:buttonTint="@color/black"
+        android:textColor="#FF0000"
+        android:text="I am 18 years of age" />
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/checkbox1"
+        android:layout_marginTop="30dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:background="@drawable/rounded_button"/>
+</RelativeLayout>
+</ScrollView>
+
